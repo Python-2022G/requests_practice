@@ -5,7 +5,8 @@ URL = 'https://randomuser.me/api/'
 payload = {
     'results': 3,
     'gender': 'male',
-    'nat': ['US', 'BR']
+    'nat': ['US', 'BR'],
+    'inc': 'name'
 }
 
 response = requests.get(URL, params=payload)
