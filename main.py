@@ -3,8 +3,8 @@ from pprint import pprint
 
 URL = 'https://randommer.io/api/Name'
 payload = {
-    'nameType': 'firstname',
-    'quantity': 10
+    'nameType': 'fullname',
+    'quantity': 5
 }
 header = {
     'X-Api-Key': '2d794c6f46094ceb96bd719c1c26c984'
