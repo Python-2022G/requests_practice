@@ -1,15 +1,15 @@
 import requests
 from pprint import pprint
 
-URL = 'https://randomuser.me/api/'
+URL = 'https://randommer.io/api/Card'
 payload = {
-    'results': 3,
-    'gender': 'male',
-    'nat': ['US', 'BR'],
-    'inc': 'name'
+    'type': 'Mastercard'
+}
+header = {
+    'X-Api-Key': '2d794c6f46094ceb96bd719c1c26c984'
 }
 
-response = requests.get(URL, params=payload)
+response = requests.get(URL, params=payload, headers=header)
 
 print(response.url)
 pprint(response.json())
